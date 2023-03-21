@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style1.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <script src="https://kit.fontawesome.com/ecf0b471b4.js" crossorigin="anonymous"></script> -->
+
+    <style>
+        .product img{
+            box-sizing: border-box;
+            width: 100%;
+            height: auto;
+            /* object-fit: cover; */
+        }
+        /* un k lie ye css he jo images height men issue kar rhi hen */
+        #featured > div.row.mx-auto.container.mt-5 > nav > ul > li.page-item.active > a{
+            background-color: black;
+        }
+        #featured > div.row.mx-auto.container.mt-5 > nav > ul > li:nth-child(n):hover>a {
+            background-color: orangered;
+            color: rgb(255, 252, 252);
+        }
+
+        .pagination a{
+            color: black;
+        }
+        .active{
+            color: aquamarine;
+        }
+    </style>
+    
+
+    <link rel="stylesheet" href="style1.css">
+    <title>Shop</title>
+</head>
+
+<body>
+
+
+    <!-- nav section  -->
+    <section class="sec1">
+
+        <!--  apni editing karne k lie mene is men py3 ki class add ki he  -->
+        <!-- fixed-top -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 fixed-top">
+            <!-- yahan par pehle container -fluid class thi  -->
+            <div class="container">
+                <img src="image3/logo.png" alt="" class="logo">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <!-- is men se men  me-auto mb-2 lg-0 dlt kronga q k ye hamen nahi cahie  -->
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" target="_blank" aria-current="page" href="index1.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Contact-Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <i class="fa fa-search"></i>
+                            <i class="fa fa-shopping-bag"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!-- featured section -->
+
+    <section id="featured" class="my-5 py-5">
+
+        <!-- mene hr se bhi bstrp ki class remove ki he or center-text ko bhi remove kia q k mujh apni headings left par cahie thi -->
+        <div class="container mt-5 py-5">
+            <h2>Our Featured </h2>
+            <hr class="">
+            <p>Here You Can Check Out Our New Products With Fair Price On Nom-Red-Store </p>
+        </div>
+
+        <!-- yahan se container fluid bhi hata dia ta k ziada space mile  -->
+        <div class="row mx-auto container">
+            <!-- onclick="window.localtion.href='sproduct.html'" -->
+            <div class="product text-center row1 col-lg-3 col-md-4 col-12">
+                <img src="img/Shop/1.jpg" alt="" class="img-fluid mb-3">
+                <div class="star">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <h5 class="p-name">Sports Shoes</h5>
+                <h4 class="p-price">$90</h4>
+                <button class="buy-btn"><a href="sproduct.html">Buy Now</a></button>
+            </div>
+            <div class="product text-center row1 col-lg-3 col-md-4 col-12">
+                <img src="img/Shop/2.jpg" alt="" class="img-fluid mb-3">
+                <div class="star">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <h5 class="p-name">Shoes</h5>
+                <h4 class="p-price">$80</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="product text-center row1 col-lg-3 col-md-4 col-12">
+                <img src="img/Shop/3.jpg" alt="" class="img-fluid mb-3">
+                <div class="star">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <h5 class="p-name">Lady Bag</h5>
+                <h4 class="p-price">$70</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="product text-center row1 col-lg-3 col-md-4 col-12">
+                <img src="img/Shop/4.jpg" alt="" class="img-fluid mb-3">
+                <div class="star">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                <h5 class="p-name">Sports Shoes</h5>
+                <h4 class="p-price">$20</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+
+            <!-- .. -->
+
+            <div class="product text-center row1 col-lg-3 col-md-4 col-12 mt-5">
+                <img src="img/Shop/5.jpg" alt="" class="img-fluid mb-3">
+                <div class="star">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <h5 class="p-name">Sports Shoes</h5>
+                <h4 class="p-price">$90</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="product text-center row1 col-lg-3 col-md-4 col-12 mt-5">
+                <img src="img/Shop/6.jpg" alt="" class="img-fluid mb-3">
+                <div class="star">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <h5 class="p-name">Shoes</h5>
+                <h4 class="p-price">$80</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="product text-center row1 col-lg-3 col-md-4 col-12 mt-5">
+                <img src="img/Shop/7.jpg" alt="" class="img-fluid mb-3">
+                <div class="star">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <h5 class="p-name">Lady Bag</h5>
+                <h4 class="p-price">$70</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="product text-center row1 col-lg-3 col-md-4 col-12 mt-5">
+                <img src="img/Shop/8.jpg" alt="" class="img-fluid mb-3">
+                <div class="star">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                <h5 class="p-name">Sports Shoes</h5>
+                <h4 class="p-price">$20</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+
+
+
+            <!-- .. -->
+           
+            <div class="product text-center row1 col-lg-3 col-md-4 col-12 mt-5">
+                <img src="img/Shop/9.jpg" alt="" class="img-fluid mb-3">
+                <div class="star">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <h5 class="p-name">Sports Shoes</h5>
+                <h4 class="p-price">$90</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="product text-center row1 col-lg-3 col-md-4 col-12 mt-5">
+                <img src="img/Shop/10.jpg" alt="" class="img-fluid mb-3">
+                <div class="star">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <h5 class="p-name">Shoes</h5>
+                <h4 class="p-price">$80</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="product text-center row1 col-lg-3 col-md-4 col-12 mt-5">
+                <img src="img/Shop/11.jpg" alt="" class="img-fluid mb-3">
+                <div class="star">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <h5 class="p-name">Lady Bag</h5>
+                <h4 class="p-price">$70</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="product text-center row1 col-lg-3 col-md-4 col-12 mt-5">
+                <img src="img/Shop/12.jpg" alt="" class="img-fluid mb-3">
+                <div class="star">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                <h5 class="p-name">Sports Shoes</h5>
+                <h4 class="p-price">$20</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+
+                <!-- ,,, -->
+                <div class="product text-center row1 col-lg-3 col-md-4 col-12 mt-5">
+                    <img src="img/Shop/13.jpg" alt="" class="img-fluid mb-3">
+                    <div class="star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                    </div>
+                    <h5 class="p-name">Sports Shoes</h5>
+                    <h4 class="p-price">$90</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+                <div class="product text-center row1 col-lg-3 col-md-4 col-12 mt-5">
+                    <img src="img/Shop/14.jpg" alt="" class="img-fluid mb-3">
+                    <div class="star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                    </div>
+                    <h5 class="p-name">Shoes</h5>
+                    <h4 class="p-price">$80</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+                <div class="product text-center row1 col-lg-3 col-md-4 col-12 mt-5">
+                    <img src="img/Shop/15.jpg" alt="" class="img-fluid mb-3">
+                    <div class="star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                    </div>
+                    <h5 class="p-name">Lady Bag</h5>
+                    <h4 class="p-price">$70</h4>
+                    <button class="buy-btn">Buy Now</button>
+                </div>
+                <div class="product text-center row1 col-lg-3 col-md-4 col-12 mt-5">
+                    <img src="img/Shop/16.jpg" alt="" class="img-fluid mb-3">
+                    <div class="star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <h5 class="p-name">Sports Shoes</h5>
+                    <h4 class="p-price">$20</h4>
+                    <button class="buy-btn">Buy Now</button>>
+                    </div>
+                    <!-- ,,,,, -->
+                    <div class="product text-center row1 col-lg-3 col-md-4 col-12 mt-5">
+                        <img src="img/Shop/17.jpg" alt="" class="img-fluid mb-3">
+                        <div class="star">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                        </div>
+                        <h5 class="p-name">Sports Shoes</h5>
+                        <h4 class="p-price">$90</h4>
+                        <button class="buy-btn">Buy Now</button>
+                    </div>
+                    <div class="product text-center row1 col-lg-3 col-md-4 col-12 mt-5">
+                        <img src="img/Shop/18.jpg" alt="" class="img-fluid mb-3">
+                        <div class="star">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                        </div>
+                        <h5 class="p-name">Shoes</h5>
+                        <h4 class="p-price">$80</h4>
+                        <button class="buy-btn">Buy Now</button>
+                    </div>
+                    <div class="product text-center row1 col-lg-3 col-md-4 col-12 mt-5">
+                        <img src="img/Shop/19.jpg" alt="" class="img-fluid mb-3">
+                        <div class="star">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                        </div>
+                        <h5 class="p-name">Lady Bag</h5>
+                        <h4 class="p-price">$70</h4>
+                        <button class="buy-btn">Buy Now</button>
+                    </div>
+                    <div class="product text-center row1 col-lg-3 col-md-4 col-12 mt-5">
+                        <img src="img/Shop/20.jpg" alt="" class="img-fluid mb-3">
+                        <div class="star">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+                        <h5 class="p-name">Sports Shoes</h5>
+                        <h4 class="p-price">$20</h4>
+                        <button class="buy-btn">Buy Now</button>>
+                        </div>
+                        <!-- ,,,,,,,,, -->
+                        <div class="product text-center row1 col-lg-3 col-md-4 col-12 mt-5">
+                            <img src="img/Shop/21.jpg" alt="" class="img-fluid mb-3">
+                            <div class="star">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                            <h5 class="p-name">Sports Shoes</h5>
+                            <h4 class="p-price">$90</h4>
+                            <button class="buy-btn">Buy Now</button>
+                        </div>
+                        <div class="product text-center row1 col-lg-3 col-md-4 col-12 mt-5">
+                            <img src="img/Shop/22.jpg" alt="" class="img-fluid mb-3">
+                            <div class="star">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                            <h5 class="p-name">Shoes</h5>
+                            <h4 class="p-price">$80</h4>
+                            <button class="buy-btn">Buy Now</button>
+                        </div>
+                        <div class="product text-center row1 col-lg-3 col-md-4 col-12 mt-5">
+                            <img src="img/Shop/23.jpg" alt="" class="img-fluid mb-3">
+                            <div class="star">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                            <h5 class="p-name">Lady Bag</h5>
+                            <h4 class="p-price">$70</h4>
+                            <button class="buy-btn">Buy Now</button>
+                        </div>
+                        <div class="product text-center row1 col-lg-3 col-md-4 col-12 mt-5">
+                            <img src="img/Shop/24.jpg" alt="" class="img-fluid mb-3">
+                            <div class="star">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </div>
+                            <h5 class="p-name">Sports Shoes</h5>
+                            <h4 class="p-price">$20</h4>
+                            <button class="buy-btn">Buy Now</button>>
+                            </div>
+                                <!-- ,,,, -->
+                                <div class="product text-center row1 col-lg-3 col-md-4 col-12 mt-5">
+                                    <img src="img/Shop/25.jpg" alt="" class="img-fluid mb-3">
+                                    <div class="star">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    </div>
+                                    <h5 class="p-name">Sports Shoes</h5>
+                                    <h4 class="p-price">$90</h4>
+                                    <button class="buy-btn">Buy Now</button>
+                                </div>
+                                <div class="product text-center row1 col-lg-3 col-md-4 col-12 mt-5">
+                                    <img src="img/Shop/26.jpg" alt="" class="img-fluid mb-3">
+                                    <div class="star">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    </div>
+                                    <h5 class="p-name">Shoes</h5>
+                                    <h4 class="p-price">$80</h4>
+                                    <button class="buy-btn">Buy Now</button>
+                                </div>
+                                <div class="product text-center row1 col-lg-3 col-md-4 col-12 mt-5">
+                                    <img src="img/Shop/18.jpg" alt="" class="img-fluid mb-3">
+                                    <div class="star">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                                    </div>
+                                    <h5 class="p-name">Lady Bag</h5>
+                                    <h4 class="p-price">$70</h4>
+                                    <button class="buy-btn">Buy Now</button>
+                                </div>
+                                <div class="product text-center row1 col-lg-3 col-md-4 col-12 mt-5">
+                                    <img src="img/Shop/8.jpg" alt="" class="img-fluid mb-3">
+                                    <div class="star">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                    </div>
+                                    <h5 class="p-name">Sports Shoes</h5>
+                                    <h4 class="p-price">$20</h4>
+                                    <button class="buy-btn">Buy Now</button>>
+                                    </div>
+            <!-- yahan se container fluid bhi hata dia ta k ziada space mile  -->
+        </div>
+
+        <div class="row mx-auto container mt-5">
+            <div class="product text-center row1 col-lg-3 col-md-4 col-12">
+                <img src="image1/product-1.jpg" alt="" class="img-fluid mb-3">
+                <div class="star">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <h5 class="p-name">Red Printed Tshirt</h5>
+                <h4 class="p-price">$30</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="product text-center row1 col-lg-3 col-md-4 col-12">
+                <img src="image1/product-2.jpg" alt="" class="img-fluid mb-3">
+                <div class="star">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <h5 class="p-name">Black Skatchers Shoes</h5>
+                <h4 class="p-price">$40</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="product text-center row1 col-lg-3 col-md-4 col-12">
+                <img src="image1/product-3.jpg" alt="" class="img-fluid mb-3">
+                <div class="star">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <h5 class="p-name">Gray Printed trouser</h5>
+                <h4 class="p-price">$20</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="product text-center row1 col-lg-3 col-md-4 col-12">
+                <img src="image1/product-4.jpg" alt="" class="img-fluid mb-3">
+                <div class="star">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                <h5 class="p-name">Blue Printed Tshirt</h5>
+                <h4 class="p-price">$30</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            
+
+            <!-- 11 -->
+
+            
+            
+
+
+
+            <nav aria-label="..." class="mt-5">
+                <ul class="pagination">
+                  <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                  </li>
+                  <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item" aria-current="page">
+                    <a class="page-link" href="#">2</a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                  </li>
+                </ul>
+              </nav>
+        </div>
+
+
+
+    </section>
+
+
+    <!-- footer section -->
+    <footer class="mt-5 py-5">
+        <div class="row  mx-auto pt-5">
+
+            <div class="footer-one col-lg-3 col-md-4 col-12">
+
+                <img src="image3/logo.png" alt="" class="logo">
+                <p class="pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati in beatae dolores
+                    similique
+                    accusantium asperiores repellat tempora veniam molestiae quaerat.</p>
+
+            </div>
+            <div class="footer-one col-lg-3 col-md-4 col-12">
+                <h5 class="pb-2">Featured</h5>
+                <ul class="text-uppercase list-unstyled">
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Boys</a></li>
+                    <li><a href="#">Girls</a></li>
+                    <li><a href="#">New Arivals</a></li>
+                    <li><a href="#">Shoes</a></li>
+                    <li><a href="#">Clothes</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-one col-lg-3 col-md-4 col-12">
+                <h5 class="pb-2">Contact-Us</h5>
+                <div>
+                    <h6 class="text-uppercase">Address</h6>
+                    <p>123 STREET NAME,ABC CITY ,US</p>
+
+                </div>
+                <div>
+                    <h6 class="text-uppercase">PHONE</h6>
+                    <p>0304-5456318</p>
+
+                </div>
+                <div>
+                    <h6 class="text-uppercase">Email</h6>
+                    <p>Noman5456318@gmail.com</p>
+
+                </div>
+
+            </div>
+            <div class="footer-one col-lg-3 col-md-4 col-12">
+                <h5 class="pb-2">Instagram</h5>
+                <div class="row">
+                    <img class="img-fluid w-25 h-100 m-2" src="img/insta/1.jpg" alt="">
+                    <img class="img-fluid w-25 h-100 m-2" src="img/insta/2.jpg" alt="">
+                    <img class="img-fluid w-25 h-100 m-2" src="img/insta/3.jpg" alt="">
+                    <img class="img-fluid w-25 h-100 m-2" src="img/insta/4.jpg" alt="">
+                    <img class="img-fluid w-25 h-100 m-2" src="img/insta/5.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="copyright mt-5">
+            <div class="row container mx-auto">
+                <div class="col-lg-3 col-md-6 col-12">
+                    <img src="img/payment.png" alt="">
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 text-nowrap">
+                    <p>NOM-RED-STORE E-Commerce © 2022. All Rights Reserved </p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-google"></i></a>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
